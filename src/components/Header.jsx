@@ -4,8 +4,8 @@ import "../styles/header.scss";
 function Header(){
     return(
             <header className="header_Container">
-                <img src="/logo.png" alt="logo of the website Kasa" />
-                <nav>
+                <img className="logo" src="/logo.png" alt="logo of the website Kasa" />
+                <nav className="nav_Container">
                     <Link to="/">Accueil</Link>
                     <Link to="/About">A propos</Link>
                 </nav>

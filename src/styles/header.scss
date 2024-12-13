@@ -1,4 +1,22 @@
 .header_Container{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 210px;
+    height: auto;
+}
+.nav_Container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 24px;
+
+}
+.nav_Container a{
+    text-decoration: none;
+    color: black;
 }

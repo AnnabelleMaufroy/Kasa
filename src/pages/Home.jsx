@@ -1,8 +1,12 @@
+import Banner from "../components/banner";
+import Cards from "../components/Cards";
+
 function Home(){
     return(
-        <div>
-            Ceci est la page d&apos;acceuil
-        </div>
+        <section>
+            <Banner />
+            <Cards />
+        </section>
     );
     
 }
