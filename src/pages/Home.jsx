@@ -5,7 +5,7 @@ function Home(){
     return(
         <section>
             <Banner
-            image ="/public/banner_accueil.png"
+            image ="/banner_accueil.png"
             text="Chez vous, partout et ailleurs" />
             <Cards />
         </section>
