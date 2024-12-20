@@ -6,17 +6,26 @@
 }
 
 .logo{
-    width: 210px;
+    width: 145px;
     height: auto;
 }
 .nav_Container{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    font-size: 24px;
-
+    gap: 30px;
+    
 }
 .nav_Container a{
     text-decoration: none;
     color: black;
+    font-size: 12px;
 }
+@media screen and (min-width: 1024px) {
+    .logo{
+        width: 210px;
+    }
+    .nav_Container a{
+        font-size:24px;
+    }
+
+  }

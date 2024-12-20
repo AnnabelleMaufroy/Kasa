@@ -4,7 +4,9 @@ import Cards from "../components/Cards";
 function Home(){
     return(
         <section>
-            <Banner />
+            <Banner
+            image ="/public/banner_accueil.png"
+            text="Chez vous, partout et ailleurs" />
             <Cards />
         </section>
     );

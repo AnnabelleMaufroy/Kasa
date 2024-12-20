@@ -1,0 +1,39 @@
+.cards_container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 5%;
+}
+.card{
+    position: relative;
+    border-radius: 0.5em;
+}
+.card_image{
+    width: 100%;
+    height: 255px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 0.5em;
+}
+.card_title{
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+    .cards_container{
+        background-color: rgba(246, 246, 246, 1);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:50px;
+        padding: 50px;
+        border-radius: 0.5em;
+    }
+}
