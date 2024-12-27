@@ -14,7 +14,7 @@ const Cards = () => {
             style={{
                 backgroundImage: `url(${card.cover})`
             }}>
-                <div className="card_title">{card.title}</div>
+                <h2 className="card_title">{card.title}</h2>
             </div>
           </div>
         ))}

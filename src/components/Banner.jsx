@@ -1,4 +1,5 @@
 import '../styles/Banner.scss'
+import PropTypes from 'prop-types';
 
 const banner = ({image ,text}) => {
   return (
@@ -9,9 +10,13 @@ const banner = ({image ,text}) => {
         className="banner_image"
         />
         <div className="banner_filter"></div>
-        <div className="banner_text">{text}</div>
+        <h1 className="banner_text">{text}</h1>
     </div>
   )
 }
+banner.propTypes = {
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string,
+};
 
 export default banner
