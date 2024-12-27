@@ -1,15 +1,9 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import '../styles/Cards.scss'
+import CardsJSON from '../assets/logements.json'
 
 const Cards = () => {
-    const [cardsData, setCardsData] = useState([]);
-
-    useEffect(() => {
-        fetch('/logements.json')
-        .then((response) => response.json())
-        .then((data) => setCardsData(data))
-        .catch((error) => console.error("Erreur de récupération des données :", error));
-    },[]);
+  const [cardsData] = useState(CardsJSON);
 
     return (
         <div className="cards_container">
