@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 96, 96, 1);
+    background-color: var(--main-elt-color);
     height: 30px;
     width: auto;
     border-radius: 5px;
@@ -42,4 +42,21 @@
     padding: 20px;
     border-radius: 5px;
     
+}
+@media screen and (min-width: 1024px) {
+    .collapse{
+        width: 70%;
+    }
+    .titleContainer{
+        height: 50px;
+    }
+    .titleContainer h2{
+        font-size: 24px;
+    }
+    .arrow{
+        width: 32px;
+    }
+    .content{
+        font-size: 18px;
+    }
 }
