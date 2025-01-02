@@ -1,14 +1,19 @@
 import { useState } from "react"
 import '../styles/Cards.scss'
 import CardsJSON from '../assets/logements.json'
+import { useNavigate } from "react-router-dom";
 
 const Cards = () => {
   const [cardsData] = useState(CardsJSON);
+  const navigate = useNavigate();
 
     return (
         <div className="cards_container">
         {cardsData.map((card) => (
-          <div className="card" key={card.id}>
+          <div
+          className="card"
+          key={card.id}
+          onClick={()=> navigate(`/Logement/${card.id}`)}>
             <div
             className="card_image"
             style={{

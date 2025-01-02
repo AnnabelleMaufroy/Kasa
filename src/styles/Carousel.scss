@@ -1,0 +1,25 @@
+.carousel{
+    position: relative
+
+}
+.arrowNext, .arrowPrev{
+    position: absolute;
+    width: 12px;
+    height: auto;
+    top: 45%;
+    cursor: pointer;
+}
+
+.arrowNext{
+    right: 10px;
+}
+.arrowPrev{
+    left: 10px;
+    rotate: 180deg;
+}
+.carousel_image{
+    width: 335px;
+    height: 255px;
+    border-radius: 5px;
+    object-fit: cover;
+}

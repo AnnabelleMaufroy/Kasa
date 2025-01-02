@@ -1,0 +1,38 @@
+.logementContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.titleLogementContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.titleLogement{
+    color: var(--main-elt-color);
+    font-size: 18px;
+    font-weight: normal;
+}
+.location{
+    font-size: 14px;
+    font-weight: normal;
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.tag{
+    background-color: var(--main-elt-color);
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 85px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
