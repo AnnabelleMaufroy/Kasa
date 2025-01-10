@@ -1,0 +1,22 @@
+.stars{
+    display: flex;
+    flex-direction: row;       
+}
+.starRed{
+    color: var(--main-elt-color);
+}
+.starGrey{
+    color: rgba(227, 227, 227, 1);
+}
+.starGrey, .starRed{
+    width: 18px;
+    height: auto;
+}
+@media screen and (min-width: 1024px) {
+    .starGrey, .starRed{
+        width: 36px;
+    }
+    .stars{
+        gap: 5px;
+    }
+}

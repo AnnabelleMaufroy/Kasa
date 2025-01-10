@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png";
 function Header(){
     return(
             <header className="header_Container">
-                <img className="logo" src={Logo} alt="logo of the website Kasa" />
+                <NavLink to='/'><img className="logo" src={Logo} alt="logo of the website Kasa" /></NavLink>
                 <nav className="nav_Container">
                     <NavLink to="/">ACCUEIL</NavLink>
                     <NavLink to="/About">A PROPOS</NavLink>

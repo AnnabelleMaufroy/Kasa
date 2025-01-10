@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Arrow from '../assets/arrow.png'
 import '../styles/Collapse.scss'
 import { useState } from 'react';
+import { IoIosArrowUp } from "react-icons/io";
 
 function Collapse({title, content}) {
 
@@ -21,14 +21,17 @@ function Collapse({title, content}) {
     <div className='collapse'>
         <div className='titleContainer'>
             <h2>{title}</h2>
-            <img
-            onClick={rotateArrow}  
-            className={arrowClass()}
-            src={Arrow} 
-            alt="flèche de l'élément collapse" />
+            <IoIosArrowUp onClick={rotateArrow}  className={arrowClass()}  />
         </div>
         <div className={contentClass()}>
-          <div className='content'>{content}</div>
+          <div className='content'>
+            {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>) : (<p>{content}</p>)}
+          </div>
         </div>
         
     </div>
@@ -37,7 +40,10 @@ function Collapse({title, content}) {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 };
 
 export default Collapse

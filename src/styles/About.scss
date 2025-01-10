@@ -2,8 +2,15 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .collapses{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+    .collapses{
+        align-items: center;
+    }
 }
