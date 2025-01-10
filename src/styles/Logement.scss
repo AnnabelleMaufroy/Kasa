@@ -4,7 +4,11 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    gap: 10px;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: column;
 }
 .titleLogementContainer{
     display: flex;
@@ -28,11 +32,83 @@
 .tag{
     background-color: var(--main-elt-color);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 10px;
     font-weight: bold;
     width: 85px;
     height: 20px;
     line-height: 20px;
     text-align: center;
+}
+.collapseContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.hostContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.host{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.hostName{
+    font-size: 12px;
+    color: var(--main-elt-color);
+    text-align: right;
+    width: 70px;
+}
+.hostPicture{
+    width: 32px;
+    height: 32px;
+    clip-path: circle();
+
+}
+@media screen and (min-width: 1024px) {
+    .logementContainer{
+        gap:30px;
+        margin-bottom: 30px;
+    }
+    .infoContainer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .titleLogement{
+        font-size: 36px;
+    }
+    .location{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .tag{
+        width: 115px;
+        height: 25px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .hostContainer{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .host{
+        gap: 20px;
+    }
+    .hostName{
+        font-size: 18px;
+        width: 90px;
+    }
+    .hostPicture{
+        width: 64px;
+        height: 64px;
+    }
+    .collapseContainer{
+        flex-direction: row;
+        gap: 90px;
+    }
 }

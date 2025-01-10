@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import "../styles/Carousel.scss";
 import { useState } from "react";
-import arrowCarousel from '../assets/arrow_carousel.png';
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 function Carousel({pictures}) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,11 +31,11 @@ function Carousel({pictures}) {
       }
 
   return (
-
     <div className="carousel">
-        <img  className="arrowPrev" src={arrowCarousel} alt="flèche précédente du carousel" onClick={prev} />
-        <img  className="carousel_image" src={pictures[currentIndex]} alt="Logement" />
-        <img className="arrowNext" src={arrowCarousel} alt="flèche suivant du carousel" onClick={next} />
+      <IoIosArrowBack className="arrowPrev"onClick={prev}/>
+      <img  className="carousel_image" src={pictures[currentIndex]} alt="Logement" />
+      <p className="numCarousel">{currentIndex+1}/{pictures.length}</p>
+      <IoIosArrowForward onClick={next} className="arrowNext"/>
     </div>
   )
 }

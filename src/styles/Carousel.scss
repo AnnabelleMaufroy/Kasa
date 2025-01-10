@@ -4,22 +4,45 @@
 }
 .arrowNext, .arrowPrev{
     position: absolute;
-    width: 12px;
+    width: 32px;
     height: auto;
+    color:white;
     top: 45%;
     cursor: pointer;
 }
 
 .arrowNext{
-    right: 10px;
+    right: 5px;
 }
 .arrowPrev{
-    left: 10px;
-    rotate: 180deg;
+    left: 5px;
 }
 .carousel_image{
-    width: 335px;
+    width: 100%;
     height: 255px;
     border-radius: 5px;
     object-fit: cover;
+}
+.numCarousel{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .arrowNext, .arrowPrev{
+        height: 80px;
+        width: auto;
+        top: 40%;
+    }
+    .carousel_image{
+        height: 415px;
+    }
+    .numCarousel{
+        display: block;
+        position: absolute;
+        font-size: 18px;
+        color: black;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 20px;
+        color: white;
+    }
 }
