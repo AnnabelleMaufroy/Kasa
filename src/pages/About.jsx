@@ -1,4 +1,4 @@
-import Banner from '../components/banner'
+import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import bannerAbout from "../assets/banner_about.png"
 import '../styles/About.scss'
