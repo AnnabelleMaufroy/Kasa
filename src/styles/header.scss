@@ -19,6 +19,7 @@
     text-decoration: none;
     color: black;
     font-size: 12px;
+    text-transform: uppercase;
 }
 a.active{
     text-decoration: underline;
@@ -29,6 +30,7 @@ a.active{
     }
     .nav_Container a{
         font-size:24px;
+        text-transform: capitalize;
     }
 
   }

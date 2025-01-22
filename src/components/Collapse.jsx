@@ -18,10 +18,10 @@ function Collapse({title, content}) {
   }
 
   return (
-    <div className='collapse'>
+    <div className='collapse' onClick={rotateArrow}>
         <div className='titleContainer'>
             <h2>{title}</h2>
-            <IoIosArrowUp onClick={rotateArrow}  className={arrowClass()}  />
+            <IoIosArrowUp className={arrowClass()}  />
         </div>
         <div className={contentClass()}>
           <div className='content'>

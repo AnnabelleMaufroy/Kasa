@@ -7,8 +7,8 @@ function Header(){
             <header className="header_Container">
                 <NavLink to='/'><img className="logo" src={Logo} alt="logo of the website Kasa" /></NavLink>
                 <nav className="nav_Container">
-                    <NavLink to="/">ACCUEIL</NavLink>
-                    <NavLink to="/About">A PROPOS</NavLink>
+                    <NavLink to="/">Accueil</NavLink>
+                    <NavLink to="/About">A propos</NavLink>
                 </nav>
             </header>
         );
