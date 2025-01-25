@@ -10,7 +10,7 @@ const banner = ({image ,text}) => {
         className="banner_image"
         />
         <div className="banner_filter"></div>
-        <h1 className="banner_text">{text}</h1>
+        {text && <h1 className="banner_text">{text}</h1>}
     </div>
   )
 }
