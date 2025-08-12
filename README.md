@@ -76,11 +76,11 @@ src/
 ├── App.jsx         # Composant principal
 ├── main.jsx        # Point d'entrée de l'application
 ```
-
 ---
-
 ## Auteur
 
-Projet réalisé par [Maufroy Annabelle] dans le cadre d'un exercice de développement web.
+Projet réalisé par Maufroy Annabelle.
 
 ---
+
+Ce projet a été développé dans le cadre d'une formation de développeur web.
